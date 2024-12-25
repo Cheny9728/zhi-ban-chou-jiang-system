@@ -5,30 +5,14 @@ a = Analysis(
     ['值班抽奖系统.py'],
     pathex=[],
     binaries=[],
-    datas=[('Imgs\\LOGO.png', 'Imgs')],
-    hiddenimports=[
-        'numpy', 
-        'numpy.random', 
-        'pandas',
-        'pandas.plotting',
-        'pandas.core.frame',
-        'pandas.core.series',
-        'pandas.core.groupby'
-    ],
+    datas=[('Imgs/LOGO.png', 'Imgs')],
+    hiddenimports=['pandas', 'numpy', 'PIL'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
-    excludes=[
-        'matplotlib', 'scipy', 'PyQt5', 'PySide2', 'IPython', 
-        'jupyter', 'notebook', 'sphinx', 'pytest',
-        'PIL.ImageDraw', 'PIL.ImageFont', 'PIL.ImageFilter',
-        'PIL.ImageEnhance', 'PIL.ImageColor', 'PIL.ImageGrab',
-        'PIL.ImageOps', 'PIL.ImageQt', 'PIL.ImageWin',
-        'PIL.ImageMath', 'PIL.ImageShow', 'PIL.ImagePath',
-        'PIL.ImageMorph', 'PIL.ImagePalette', 'PIL.ImageSequence',
-        'PIL.ImageStat'
-    ],
+    excludes=[],
     noarchive=False,
+    optimize=0,
 )
 pyz = PYZ(a.pure)
 
